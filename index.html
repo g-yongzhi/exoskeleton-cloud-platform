@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>灵壳外骨骼云平台</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="dashboard">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">LK</span><span>灵壳外骨骼云平台</span></a>
+    <div class="topbar-user">恢复整理版 · 静态演示数据</div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar"></nav>
+    <main class="main">
+      <div class="notice">当前页面根据源码 PDF 恢复整理，数据为演示数据，未连接真实外骨骼设备。</div>
+      <h1 class="page-title">首页看板</h1>
+      <p class="page-desc">汇总今日步数、活动时间、摔倒事件和设备状态。</p>
+      <section class="grid grid-3">
+        <article class="card"><div class="metric-label">今日步数</div><div class="metric-value" id="stepCount">--</div><div class="metric-foot">较昨日 +8%</div></article>
+        <article class="card"><div class="metric-label">活动时间</div><div class="metric-value" id="activeTime">--</div><div class="metric-foot">含步行与康复训练</div></article>
+        <article class="card"><div class="metric-label">摔倒事件</div><div class="metric-value" id="fallCount">--</div><div class="metric-foot">今日无高风险报警</div></article>
+      </section>
+      <section class="grid grid-2" style="margin-top:18px">
+        <article class="card">
+          <h2>设备状态</h2>
+          <div class="status-row"><span>连接状态</span><span class="badge green">在线</span></div>
+          <div class="status-row"><span>电量</span><strong id="deviceBattery">--</strong></div>
+          <div class="status-row"><span>当前模式</span><strong id="deviceMode">--</strong></div>
+          <div class="button-row"><button class="button secondary" data-demo-action="刷新设备状态">刷新状态</button><a class="button" href="device.html">查看设备</a></div>
+        </article>
+        <article class="card"><h2>数据趋势</h2><div class="chart" id="stepChart"></div></article>
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
