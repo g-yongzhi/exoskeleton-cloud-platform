@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>设备管理 - 灵壳外骨骼云平台</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="device">
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">LK</span><span>灵壳外骨骼云平台</span></a><div class="topbar-user">设备管理</div></header>
+  <div class="layout">
+    <nav class="sidebar"></nav>
+    <main class="main">
+      <h1 class="page-title">设备管理</h1>
+      <p class="page-desc">整理源码 PDF 中出现的设备列表、设备详情、模式切换和设备绑定逻辑。</p>
+      <section class="grid grid-2">
+        <article class="card"><h2>设备列表</h2><div class="list" id="deviceList"></div><div class="button-row"><button class="button" data-demo-action="绑定新设备">绑定新设备</button></div></article>
+        <article class="card"><h2>设备详情</h2><div class="info-row"><span>设备 ID</span><strong id="detailId">--</strong></div><div class="info-row"><span>电量</span><strong id="detailBattery">--</strong></div><div class="info-row"><span>使用时长</span><strong id="detailUsage">--</strong></div><div class="info-row"><span>当前模式</span><strong id="detailMode">--</strong></div><div class="button-row"><button class="button secondary" data-demo-action="切换为步行模式">步行模式</button><button class="button secondary" data-demo-action="切换为训练模式">训练模式</button></div></article>
+      </section>
+      <section class="card" style="margin-top:18px"><h2>摔倒事件记录</h2><div class="list" id="fallEvents"></div></section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
